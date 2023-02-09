@@ -3,7 +3,7 @@ namespace test;
 entity Node {
     key nodeID         : Integer;
         hierarchyLevel : Integer;
-        parentNodeID   : String;
+        parentNodeID   : Integer;
         description    : String;
         drillState     : String;
 }

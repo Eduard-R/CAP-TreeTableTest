@@ -13,6 +13,36 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+
+            <Annotations Target="HierarchyService.Node">
+    <Annotation Term="UI.LineItem">
+        <Collection>
+            <Record Type="UI.DataField">
+                <PropertyValue Property="Value" Path="description"/>
+            </Record>
+        </Collection>
+    </Annotation>
+
+    
+    <Annotation Term="UI.HeaderInfo" >
+        <Record Type="UI.HeaderInfoType">
+            <PropertyValue Property="TypeName" String="Node"/>
+            <PropertyValue Property="TypeNamePlural" String="Nodes"/>
+            <PropertyValue Property="Title">
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Value" Path="REPLACE_WITH_TITLE_PROPERTY"/>
+                </Record>
+            </PropertyValue>
+            <PropertyValue Property="Description">
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Value" Path="description"/>
+                </Record>
+            </PropertyValue>
+        </Record>
+    </Annotation>
+
+</Annotations>
+
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
