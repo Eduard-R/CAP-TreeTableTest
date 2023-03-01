@@ -110,6 +110,16 @@
               "loadDataOnAppLaunch": "always"
             }
           }
+        },
+        "pages": {
+          "ObjectPage|Node": {
+            "entitySet": "Node",
+            "defaultLayoutType": "OneColumn",
+            "component": {
+              "name": "sap.suite.ui.generic.template.ObjectPage",
+              "settings": {}
+            }
+          }
         }
       }
     }
